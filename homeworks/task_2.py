@@ -7,10 +7,19 @@
 is_sunny = True
 is_warm = False
 
-can_go_walk = is_sunny and is_warm
+# can_go_walk = is_sunny and is_warm
+if is_sunny and is_warm:
+    can_go_walk = True
+else:
+    can_go_walk = False
+
 print(f"Можна йти гуляти: {can_go_walk}")
 
-can_wear_tshirt = is_sunny or is_warm
+if is_sunny or is_warm:
+    can_wear_tshirt = True
+else:
+    can_wear_tshirt = False
+
 print(f"Можна вдягнути футболку: {can_wear_tshirt}")
 
 
